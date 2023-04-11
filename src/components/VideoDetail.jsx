@@ -12,7 +12,15 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 const VideoDetail = () => {
   return (
     <div>
-      VideoDetail
+      <Box minHeight="95vh" >
+        <Stack direction={{ xs: "column", md: "row" }} >
+            <Box flex={1} >
+                <Box sx={{ width: "100%", position: "sticky", top: "86px" }} >
+                    <ReactPlayer />
+                </Box>
+            </Box>
+        </Stack>
+      </Box>
     </div>
   )
 }
